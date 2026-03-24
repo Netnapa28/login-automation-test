@@ -35,9 +35,19 @@ ${MSG_INVALID_USERNAME}        Your username is invalid!
     #Title Should Be    ${TITLE}
 
 Open Browser To Login Page
-    ${chrome_options}=    Set Variable    --headless=new --no-sandbox --disable-dev-shm-usage --window-size=1920,1080
+    ${chrome_options}=    Evaluate    sys.modules['selenium.webdriver'].ChromeOptions()    sys, selenium.webdriver
 
-    Open Browser    ${LOGIN_URL}    ${BROWSER}    options=${chrome_options}
+    @{args}=    Create List
+    ...    --headless
+    ...    --no-sandbox
+    ...    --disable-dev-shm-usage
+    ...    --window-size=1920,1080
+
+    FOR    ${arg}    IN    @{args}
+        Call Method    ${chrome_options}    add_argument    ${arg}
+    END
+
+    Open Browser    ${LOGIN_URL}    chrome    options=${chrome_options}
     Title Should Be    ${TITLE}
 
 Input Username
