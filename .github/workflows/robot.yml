@@ -1,0 +1,46 @@
+name: Robot Framework Test
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1. ดึงโค้ด
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      # 2. ติดตั้ง Python
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: 3.10
+
+      # 3. ติดตั้ง dependencies
+      - name: Install dependencies
+        run: |
+          pip install --upgrade pip
+          pip install -r requirements.txt
+
+      # 4. ติดตั้ง browser (สำหรับ Selenium)
+      - name: Install Chrome
+        uses: browser-actions/setup-chrome@v1
+
+      # 5. รัน Robot Framework
+      - name: Run Robot Tests
+        run: robot login_tests/
+
+      # 6. เก็บ report (optional แต่แนะนำ)
+      - name: Upload Robot Report
+        uses: actions/upload-artifact@v3
+        with:
+          name: robot-report
+          path: |
+            report.html
+            log.html
+            output.xml

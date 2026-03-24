@@ -1,250 +1,250 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.4.1 (Python 3.13.5 on win32)" generated="2026-03-24T21:05:29.832930" rpa="false" schemaversion="5">
+<robot generator="Robot 7.4.1 (Python 3.13.5 on win32)" generated="2026-03-24T21:21:57.421346" rpa="false" schemaversion="5">
 <suite id="s1" name="Login Tests" source="C:\Users\Asus\Desktop\login-automation-test\login_tests">
 <suite id="s1-s1" name="Invalid Login" source="C:\Users\Asus\Desktop\login-automation-test\login_tests\invalid_login.robot">
 <kw name="Open Browser To Login Page" owner="resource" type="SETUP">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2026-03-24T21:05:30.192599" level="INFO">Opening browser 'Chrome' to base url 'https://the-internet.herokuapp.com/login'.</msg>
+<msg time="2026-03-24T21:21:57.681391" level="INFO">Opening browser 'Chrome' to base url 'https://the-internet.herokuapp.com/login'.</msg>
 <arg>${LOGIN_URL}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2026-03-24T21:05:30.192216" elapsed="7.337928"/>
+<status status="PASS" start="2026-03-24T21:21:57.681157" elapsed="5.605624"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2026-03-24T21:05:37.530525" elapsed="0.046920"/>
+<status status="PASS" start="2026-03-24T21:22:03.287169" elapsed="0.033935"/>
 </kw>
 <kw name="Title Should Be" owner="SeleniumLibrary">
-<msg time="2026-03-24T21:05:37.590106" level="INFO">Page title is 'The Internet'.</msg>
+<msg time="2026-03-24T21:22:03.334478" level="INFO">Page title is 'The Internet'.</msg>
 <arg>${TITLE}</arg>
 <doc>Verifies that the current page title equals ``title``.</doc>
-<status status="PASS" start="2026-03-24T21:05:37.577671" elapsed="0.012552"/>
+<status status="PASS" start="2026-03-24T21:22:03.321359" elapsed="0.013501"/>
 </kw>
-<status status="PASS" start="2026-03-24T21:05:30.191476" elapsed="7.398875"/>
+<status status="PASS" start="2026-03-24T21:21:57.680581" elapsed="5.654459"/>
 </kw>
 <test id="s1-s1-t1" name="Login failed - Password incorrect" line="8">
 <kw name="Go To" owner="SeleniumLibrary" type="SETUP">
-<msg time="2026-03-24T21:05:37.591287" level="INFO">Opening url 'https://the-internet.herokuapp.com/login'</msg>
+<msg time="2026-03-24T21:22:03.336092" level="INFO">Opening url 'https://the-internet.herokuapp.com/login'</msg>
 <arg>${LOGIN_URL}</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<status status="PASS" start="2026-03-24T21:05:37.591078" elapsed="0.433127"/>
+<status status="PASS" start="2026-03-24T21:22:03.335844" elapsed="0.375076"/>
 </kw>
 <kw name="Input Username" owner="resource">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2026-03-24T21:05:38.026246" level="INFO">Typing text 'tomsmith' into text field 'id:username'.</msg>
+<msg time="2026-03-24T21:22:03.713577" level="INFO">Typing text 'tomsmith' into text field 'id:username'.</msg>
 <arg>${TXT_USERNAME}</arg>
 <arg>${username}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2026-03-24T21:05:38.025488" elapsed="0.213672"/>
+<status status="PASS" start="2026-03-24T21:22:03.712900" elapsed="0.174596"/>
 </kw>
 <arg>${VALID_USER}</arg>
-<status status="PASS" start="2026-03-24T21:05:38.024851" elapsed="0.214501"/>
+<status status="PASS" start="2026-03-24T21:22:03.712148" elapsed="0.175472"/>
 </kw>
 <kw name="Input Password" owner="resource">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2026-03-24T21:05:38.240608" level="INFO">Typing text 'Password!' into text field 'id:password'.</msg>
+<msg time="2026-03-24T21:22:03.888524" level="INFO">Typing text 'Password!' into text field 'id:password'.</msg>
 <arg>${TXT_PASSWORD}</arg>
 <arg>${password}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2026-03-24T21:05:38.240284" elapsed="0.176437"/>
+<status status="PASS" start="2026-03-24T21:22:03.888309" elapsed="0.115324"/>
 </kw>
 <arg>${INVALID_PASSWORD}</arg>
-<status status="PASS" start="2026-03-24T21:05:38.239850" elapsed="0.177012"/>
+<status status="PASS" start="2026-03-24T21:22:03.887981" elapsed="0.115754"/>
 </kw>
 <kw name="Click Login" owner="resource">
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2026-03-24T21:05:38.418098" level="INFO">Clicking button 'css:button[type="submit"]'.</msg>
+<msg time="2026-03-24T21:22:04.004528" level="INFO">Clicking button 'css:button[type="submit"]'.</msg>
 <arg>${BTN_LOGIN}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2026-03-24T21:05:38.417795" elapsed="0.215456"/>
+<status status="PASS" start="2026-03-24T21:22:04.004340" elapsed="0.879212"/>
 </kw>
-<status status="PASS" start="2026-03-24T21:05:38.417296" elapsed="0.216124"/>
+<status status="PASS" start="2026-03-24T21:22:04.004034" elapsed="0.879656"/>
 </kw>
 <kw name="Login Failed Should Be Shown" owner="resource">
 <kw name="Location Should Be" owner="SeleniumLibrary">
-<msg time="2026-03-24T21:05:39.603446" level="INFO">Current location is 'https://the-internet.herokuapp.com/login'.</msg>
+<msg time="2026-03-24T21:22:04.895890" level="INFO">Current location is 'https://the-internet.herokuapp.com/login'.</msg>
 <arg>${LOGIN_URL}</arg>
 <doc>Verifies that the current URL is exactly ``url``.</doc>
-<status status="PASS" start="2026-03-24T21:05:38.634503" elapsed="0.969061"/>
+<status status="PASS" start="2026-03-24T21:22:04.884461" elapsed="0.011510"/>
 </kw>
 <kw name="Element Should Contain" owner="SeleniumLibrary">
-<msg time="2026-03-24T21:05:39.656057" level="INFO">Element 'id:flash' contains text 'Your password is invalid!'.</msg>
+<msg time="2026-03-24T21:22:04.928099" level="INFO">Element 'id:flash' contains text 'Your password is invalid!'.</msg>
 <arg>${FLASH}</arg>
 <arg>${message}</arg>
 <doc>Verifies that element ``locator`` contains text ``expected``.</doc>
-<status status="PASS" start="2026-03-24T21:05:39.603796" elapsed="0.052377"/>
+<status status="PASS" start="2026-03-24T21:22:04.896103" elapsed="0.032126"/>
 </kw>
 <arg>${MSG_INVALID_PASSWORD}</arg>
-<status status="PASS" start="2026-03-24T21:05:38.633987" elapsed="1.022305"/>
+<status status="PASS" start="2026-03-24T21:22:04.884069" elapsed="0.044252"/>
 </kw>
-<status status="PASS" start="2026-03-24T21:05:37.590451" elapsed="2.066284"/>
+<status status="PASS" start="2026-03-24T21:22:03.335159" elapsed="1.593427"/>
 </test>
 <test id="s1-s1-t2" name="Login failed - Username not found" line="14">
 <kw name="Go To" owner="SeleniumLibrary" type="SETUP">
-<msg time="2026-03-24T21:05:39.658411" level="INFO">Opening url 'https://the-internet.herokuapp.com/login'</msg>
+<msg time="2026-03-24T21:22:04.930103" level="INFO">Opening url 'https://the-internet.herokuapp.com/login'</msg>
 <arg>${LOGIN_URL}</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<status status="PASS" start="2026-03-24T21:05:39.658184" elapsed="0.586169"/>
+<status status="PASS" start="2026-03-24T21:22:04.929849" elapsed="0.359527"/>
 </kw>
 <kw name="Input Username" owner="resource">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2026-03-24T21:05:40.245938" level="INFO">Typing text 'tomholland' into text field 'id:username'.</msg>
+<msg time="2026-03-24T21:22:05.291203" level="INFO">Typing text 'tomholland' into text field 'id:username'.</msg>
 <arg>${TXT_USERNAME}</arg>
 <arg>${username}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2026-03-24T21:05:40.245488" elapsed="0.184040"/>
+<status status="PASS" start="2026-03-24T21:22:05.290970" elapsed="0.161327"/>
 </kw>
 <arg>${INVALID_USER}</arg>
-<status status="PASS" start="2026-03-24T21:05:40.245016" elapsed="0.184666"/>
+<status status="PASS" start="2026-03-24T21:22:05.290314" elapsed="0.162087"/>
 </kw>
 <kw name="Input Password" owner="resource">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2026-03-24T21:05:40.431001" level="INFO">Typing text 'Password!' into text field 'id:password'.</msg>
+<msg time="2026-03-24T21:22:05.453632" level="INFO">Typing text 'Password!' into text field 'id:password'.</msg>
 <arg>${TXT_PASSWORD}</arg>
 <arg>${password}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2026-03-24T21:05:40.430695" elapsed="0.159474"/>
+<status status="PASS" start="2026-03-24T21:22:05.453444" elapsed="0.144596"/>
 </kw>
 <arg>${INVALID_PASSWORD}</arg>
-<status status="PASS" start="2026-03-24T21:05:40.430140" elapsed="0.160170"/>
+<status status="PASS" start="2026-03-24T21:22:05.453151" elapsed="0.144993"/>
 </kw>
 <kw name="Click Login" owner="resource">
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2026-03-24T21:05:40.591320" level="INFO">Clicking button 'css:button[type="submit"]'.</msg>
+<msg time="2026-03-24T21:22:05.598869" level="INFO">Clicking button 'css:button[type="submit"]'.</msg>
 <arg>${BTN_LOGIN}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2026-03-24T21:05:40.591038" elapsed="0.983999"/>
+<status status="PASS" start="2026-03-24T21:22:05.598678" elapsed="1.182308"/>
 </kw>
-<status status="PASS" start="2026-03-24T21:05:40.590741" elapsed="0.984423"/>
+<status status="PASS" start="2026-03-24T21:22:05.598438" elapsed="1.182645"/>
 </kw>
 <kw name="Login Failed Should Be Shown" owner="resource">
 <kw name="Location Should Be" owner="SeleniumLibrary">
-<msg time="2026-03-24T21:05:41.594907" level="INFO">Current location is 'https://the-internet.herokuapp.com/login'.</msg>
+<msg time="2026-03-24T21:22:06.791322" level="INFO">Current location is 'https://the-internet.herokuapp.com/login'.</msg>
 <arg>${LOGIN_URL}</arg>
 <doc>Verifies that the current URL is exactly ``url``.</doc>
-<status status="PASS" start="2026-03-24T21:05:41.576469" elapsed="0.018648"/>
+<status status="PASS" start="2026-03-24T21:22:06.781789" elapsed="0.009614"/>
 </kw>
 <kw name="Element Should Contain" owner="SeleniumLibrary">
-<msg time="2026-03-24T21:05:41.624320" level="INFO">Element 'id:flash' contains text 'Your username is invalid!'.</msg>
+<msg time="2026-03-24T21:22:06.812472" level="INFO">Element 'id:flash' contains text 'Your username is invalid!'.</msg>
 <arg>${FLASH}</arg>
 <arg>${message}</arg>
 <doc>Verifies that element ``locator`` contains text ``expected``.</doc>
-<status status="PASS" start="2026-03-24T21:05:41.595525" elapsed="0.028922"/>
+<status status="PASS" start="2026-03-24T21:22:06.791684" elapsed="0.020867"/>
 </kw>
 <arg>${MSG_INVALID_USERNAME}</arg>
-<status status="PASS" start="2026-03-24T21:05:41.575773" elapsed="0.048800"/>
+<status status="PASS" start="2026-03-24T21:22:06.781406" elapsed="0.031227"/>
 </kw>
-<status status="PASS" start="2026-03-24T21:05:39.657623" elapsed="1.967349"/>
+<status status="PASS" start="2026-03-24T21:22:04.929307" elapsed="1.883560"/>
 </test>
 <kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2026-03-24T21:05:41.626603" elapsed="2.243136"/>
+<status status="PASS" start="2026-03-24T21:22:06.813769" elapsed="2.171324"/>
 </kw>
-<status status="PASS" start="2026-03-24T21:05:29.884036" elapsed="13.985820"/>
+<status status="PASS" start="2026-03-24T21:21:57.459145" elapsed="11.526060"/>
 </suite>
 <suite id="s1-s2" name="Valid Login" source="C:\Users\Asus\Desktop\login-automation-test\login_tests\valid_login.robot">
 <test id="s1-s2-t1" name="Login success" line="6">
 <kw name="Open Browser To Login Page" owner="resource">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2026-03-24T21:05:43.875840" level="INFO">Opening browser 'Chrome' to base url 'https://the-internet.herokuapp.com/login'.</msg>
+<msg time="2026-03-24T21:22:08.989187" level="INFO">Opening browser 'Chrome' to base url 'https://the-internet.herokuapp.com/login'.</msg>
 <arg>${LOGIN_URL}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2026-03-24T21:05:43.875583" elapsed="5.652584"/>
+<status status="PASS" start="2026-03-24T21:22:08.989023" elapsed="5.421003"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2026-03-24T21:05:49.528898" elapsed="0.050555"/>
+<status status="PASS" start="2026-03-24T21:22:14.410365" elapsed="0.028090"/>
 </kw>
 <kw name="Title Should Be" owner="SeleniumLibrary">
-<msg time="2026-03-24T21:05:49.592650" level="INFO">Page title is 'The Internet'.</msg>
+<msg time="2026-03-24T21:22:14.446438" level="INFO">Page title is 'The Internet'.</msg>
 <arg>${TITLE}</arg>
 <doc>Verifies that the current page title equals ``title``.</doc>
-<status status="PASS" start="2026-03-24T21:05:49.579778" elapsed="0.013027"/>
+<status status="PASS" start="2026-03-24T21:22:14.438602" elapsed="0.007914"/>
 </kw>
-<status status="PASS" start="2026-03-24T21:05:43.875171" elapsed="5.717799"/>
+<status status="PASS" start="2026-03-24T21:22:08.988819" elapsed="5.457776"/>
 </kw>
 <kw name="Input Username" owner="resource">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2026-03-24T21:05:49.594748" level="INFO">Typing text 'tomsmith' into text field 'id:username'.</msg>
+<msg time="2026-03-24T21:22:14.447303" level="INFO">Typing text 'tomsmith' into text field 'id:username'.</msg>
 <arg>${TXT_USERNAME}</arg>
 <arg>${username}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2026-03-24T21:05:49.594239" elapsed="0.224792"/>
+<status status="PASS" start="2026-03-24T21:22:14.447127" elapsed="0.127671"/>
 </kw>
 <arg>${VALID_USER}</arg>
-<status status="PASS" start="2026-03-24T21:05:49.593552" elapsed="0.225659"/>
+<status status="PASS" start="2026-03-24T21:22:14.446846" elapsed="0.128048"/>
 </kw>
 <kw name="Input Password" owner="resource">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2026-03-24T21:05:49.820498" level="INFO">Typing text 'SuperSecretPassword!' into text field 'id:password'.</msg>
+<msg time="2026-03-24T21:22:14.575906" level="INFO">Typing text 'SuperSecretPassword!' into text field 'id:password'.</msg>
 <arg>${TXT_PASSWORD}</arg>
 <arg>${password}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2026-03-24T21:05:49.820217" elapsed="0.166118"/>
+<status status="PASS" start="2026-03-24T21:22:14.575724" elapsed="0.097487"/>
 </kw>
 <arg>${VALID_PASSWORD}</arg>
-<status status="PASS" start="2026-03-24T21:05:49.819652" elapsed="0.166865"/>
+<status status="PASS" start="2026-03-24T21:22:14.575320" elapsed="0.098024"/>
 </kw>
 <kw name="Click Login" owner="resource">
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2026-03-24T21:05:49.987664" level="INFO">Clicking button 'css:button[type="submit"]'.</msg>
+<msg time="2026-03-24T21:22:14.674259" level="INFO">Clicking button 'css:button[type="submit"]'.</msg>
 <arg>${BTN_LOGIN}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2026-03-24T21:05:49.987421" elapsed="0.168679"/>
+<status status="PASS" start="2026-03-24T21:22:14.674076" elapsed="1.102294"/>
 </kw>
-<status status="PASS" start="2026-03-24T21:05:49.987009" elapsed="0.169224"/>
+<status status="PASS" start="2026-03-24T21:22:14.673818" elapsed="1.102655"/>
 </kw>
 <kw name="Login Success Should Be Shown" owner="resource">
 <kw name="Location Should Be" owner="SeleniumLibrary">
-<msg time="2026-03-24T21:05:51.193531" level="INFO">Current location is 'https://the-internet.herokuapp.com/secure'.</msg>
+<msg time="2026-03-24T21:22:15.785073" level="INFO">Current location is 'https://the-internet.herokuapp.com/secure'.</msg>
 <arg>${SECURE_URL}</arg>
 <doc>Verifies that the current URL is exactly ``url``.</doc>
-<status status="PASS" start="2026-03-24T21:05:50.157123" elapsed="1.036521"/>
+<status status="PASS" start="2026-03-24T21:22:15.777436" elapsed="0.007714"/>
 </kw>
 <kw name="Element Should Contain" owner="SeleniumLibrary">
-<msg time="2026-03-24T21:05:51.239835" level="INFO">Element 'id:flash' contains text 'You logged into a secure area!'.</msg>
+<msg time="2026-03-24T21:22:15.819289" level="INFO">Element 'id:flash' contains text 'You logged into a secure area!'.</msg>
 <arg>${FLASH}</arg>
 <arg>${MSG_LOGIN_SUCCESS}</arg>
 <doc>Verifies that element ``locator`` contains text ``expected``.</doc>
-<status status="PASS" start="2026-03-24T21:05:51.193837" elapsed="0.046107"/>
+<status status="PASS" start="2026-03-24T21:22:15.785304" elapsed="0.034066"/>
 </kw>
-<status status="PASS" start="2026-03-24T21:05:50.156716" elapsed="1.083342"/>
+<status status="PASS" start="2026-03-24T21:22:15.776956" elapsed="0.042496"/>
 </kw>
 <kw name="Click Logout" owner="resource">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2026-03-24T21:05:51.241139" level="INFO">Clicking element 'css:a[href="/logout"]'.</msg>
+<msg time="2026-03-24T21:22:15.820128" level="INFO">Clicking element 'css:a[href="/logout"]'.</msg>
 <arg>${BTN_LOGOUT}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2026-03-24T21:05:51.240863" elapsed="0.907510"/>
+<status status="PASS" start="2026-03-24T21:22:15.819965" elapsed="0.794334"/>
 </kw>
-<status status="PASS" start="2026-03-24T21:05:51.240508" elapsed="0.908075"/>
+<status status="PASS" start="2026-03-24T21:22:15.819735" elapsed="0.794665"/>
 </kw>
 <kw name="Logout Success Should Be Shown" owner="resource">
 <kw name="Location Should Be" owner="SeleniumLibrary">
-<msg time="2026-03-24T21:05:52.162556" level="INFO">Current location is 'https://the-internet.herokuapp.com/login'.</msg>
+<msg time="2026-03-24T21:22:16.624194" level="INFO">Current location is 'https://the-internet.herokuapp.com/login'.</msg>
 <arg>${LOGIN_URL}</arg>
 <doc>Verifies that the current URL is exactly ``url``.</doc>
-<status status="PASS" start="2026-03-24T21:05:52.149750" elapsed="0.012909"/>
+<status status="PASS" start="2026-03-24T21:22:16.615646" elapsed="0.008633"/>
 </kw>
 <kw name="Element Should Contain" owner="SeleniumLibrary">
-<msg time="2026-03-24T21:05:52.194348" level="INFO">Element 'id:flash' contains text 'You logged out of the secure area!'.</msg>
+<msg time="2026-03-24T21:22:16.643933" level="INFO">Element 'id:flash' contains text 'You logged out of the secure area!'.</msg>
 <arg>${FLASH}</arg>
 <arg>${MSG_LOGOUT_SUCCESS}</arg>
 <doc>Verifies that element ``locator`` contains text ``expected``.</doc>
-<status status="PASS" start="2026-03-24T21:05:52.162952" elapsed="0.031529"/>
+<status status="PASS" start="2026-03-24T21:22:16.624412" elapsed="0.019606"/>
 </kw>
-<status status="PASS" start="2026-03-24T21:05:52.149306" elapsed="0.045292"/>
+<status status="PASS" start="2026-03-24T21:22:16.615058" elapsed="0.029052"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2026-03-24T21:05:52.195065" elapsed="2.233404"/>
+<status status="PASS" start="2026-03-24T21:22:16.644451" elapsed="2.141535"/>
 </kw>
-<status status="PASS" start="2026-03-24T21:05:43.874641" elapsed="10.554325"/>
+<status status="PASS" start="2026-03-24T21:22:08.988468" elapsed="9.797812"/>
 </test>
-<status status="PASS" start="2026-03-24T21:05:43.871160" elapsed="10.558860"/>
+<status status="PASS" start="2026-03-24T21:22:08.986163" elapsed="9.800855"/>
 </suite>
-<status status="PASS" start="2026-03-24T21:05:29.835903" elapsed="24.595724"/>
+<status status="PASS" start="2026-03-24T21:21:57.423313" elapsed="21.364782"/>
 </suite>
 <statistics>
 <total>
