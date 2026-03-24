@@ -68,7 +68,14 @@ Login Success Should Be Shown
     Location Should Be    ${SECURE_URL}
     Element Should Contain    ${FLASH}    ${MSG_LOGIN_SUCCESS}
 
+#Logout Success Should Be Shown
+    #Location Should Be    ${LOGIN_URL}
+    #Element Should Contain    ${FLASH}    ${MSG_LOGOUT_SUCCESS}
+
 Logout Success Should Be Shown
+    Wait Until Location Contains    /login    timeout=10s
+    Wait Until Element Is Visible    ${FLASH}    timeout=10s
+
     Location Should Be    ${LOGIN_URL}
     Element Should Contain    ${FLASH}    ${MSG_LOGOUT_SUCCESS}
 
