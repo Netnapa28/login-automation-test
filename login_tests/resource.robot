@@ -30,7 +30,8 @@ ${MSG_INVALID_USERNAME}        Your username is invalid!
 
 *** Keywords ***
 Open Browser To Login Page
-    Open Browser    ${LOGIN_URL}    ${BROWSER}
+    #Open Browser    ${LOGIN_URL}    ${BROWSER}
+    Open Browser    ${LOGIN_URL}    ${BROWSER}    options=add_argument(--headless);add_argument(--no-sandbox);add_argument(--disable-dev-shm-usage)
     Maximize Browser Window
     Title Should Be    ${TITLE}
 
